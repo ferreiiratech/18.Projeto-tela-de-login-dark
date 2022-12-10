@@ -2,19 +2,102 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     margin: 0;
     font-family: "Noto Sans", sans-serif;
+    background-color: #201b2c;
+    transition: 0.3s;
 }
 
 body * {
     box-sizing: border-box;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-sun {
+    display: none;
+}
+
+.mode{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #201b2c;
+    border-bottom: 1px solid #80808033;
+}
+
+.mode-interno{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    max-width: 80px;
+    height: 50px;
+    border-radius: 12px;
+    color: #77ffc0;
+    background-color: #2f2841;
+    cursor: pointer;
+}
+
+/* Light theme */
+.light, .light .mode{
+    background-color: #fafafa;
+}
+
+.light .bi-moon {
+    display: none;
+}
+    
+.light .bi-sun {
+    display: block;
+}
+
+.light .left-login > h1{
+    color: #37474F;
+}
+
+.light .card-login{
+    background-color: #f8f8f8;
+    border: 1px solid #2f284166;
+}
+
+.light .card-login > h1{
+    color: #37474F;
+}
+
+.light .btn-login{
+    color: #00ff88;
+    background-color: #37474F;
+}
+
+.light .textfield > input{
+    color: #37474f;
+    background-color: #1ee487;
+}
+
+.light .textfield input::placeholder{
+    color: #37474fb3;
+}
+
+
+/* Main */
 .main-login{
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
     display: flex;
     justify-content: center; /*Eixo x*/
     align-items: center; /*Eixo y*/
