@@ -27,7 +27,7 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-.bi-sun {
+.bi-moon {
     display: none;
 }
 
@@ -59,11 +59,11 @@ input[type="checkbox"] {
 }
 
 .light .bi-moon {
-    display: none;
+    display: block;
 }
     
 .light .bi-sun {
-    display: block;
+    display: none;
 }
 
 .light .left-login > h1{
@@ -90,7 +90,11 @@ input[type="checkbox"] {
 }
 
 .light .textfield input::placeholder{
-    color: #37474fb3;
+    color: #37474f69;
+}
+
+.light .textfield label{
+    color: #37474F;
 }
 
 
